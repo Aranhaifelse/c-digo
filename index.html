@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conceito Planejados – Móveis planejados, seu espaço do seu jeito</title>
+<meta name="description" content="Projetos exclusivos de móveis planejados que unem beleza, funcionalidade e aproveitamento inteligente de cada ambiente.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="header">
+    <a class="logo" href="#topo" aria-label="Conceito Planejados – 10 anos"><img src="Imagens/logo.png" alt="Conceito Planejados – 10 anos"></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="menu" id="menu" aria-label="Menu principal">
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#cozinhas">Cozinhas</a>
+    <a href="#salas">Salas</a>
+    <a href="#banheiros">Banheiros</a>
+    <a href="#orcamento">Solicite seu orçamento</a>
+  </nav>
+
+  <section class="hero" id="topo">
+    <img class="hero-3d" src="Imagens/Cozinha Isométrica com Ilha e Plantas.png" alt="Ilustração 3D de uma cozinha planejada">
+    <div class="hero-text">
+      <div class="kicker">Móveis Planejados</div>
+      <h1>Seu espaço do<br><em>seu jeito.</em></h1>
+      <p>Projetos exclusivos, que unem beleza,<br>funcionalidade e <b>aproveitamento<br>inteligente de cada ambiente</b></p>
+    </div>
+    <a class="btn-wa" data-wa href="#" target="_blank" rel="noopener"><img src="Imagens/whatsapp.png" alt="">Fale conosco</a>
+  </section>
+
+  <main class="body">
+    <section class="how" id="como-funciona">
+      <div class="label">Do seu jeito</div>
+      <h2>Como funciona?</h2>
+      <ol class="steps">
+        <li class="step"><span class="n">1</span><p>Você nos conta suas ideias<br>e necessidades.</p></li>
+        <li class="step"><span class="n">2</span><p>Criamos o projeto em 3D do<br>seu ambiente.</p></li>
+        <li class="step"><span class="n">3</span><p>Aprovado o projeto,<br>produzimos com materiais<br>de qualidade.</p></li>
+        <li class="step"><span class="n">4</span><p>Instalação e entrega no<br>prazo combinado.</p></li>
+      </ol>
+    </section>
+
+    <div class="shots">
+      <div class="shot d3"><img class="pic" src="Imagens/Imagem-cozinha 1.png" alt="Projeto 3D de cozinha"><span class="tag">Imagem<br>3D</span></div>
+      <img class="arrow" src="Imagens/image 10.png" alt="">
+      <div class="shot real"><img class="pic" src="Imagens/cozinha-real1 1.png" alt="Cozinha real instalada"><span class="tag">Imagem<br>Real</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="cat c1" id="cozinhas">
+      <h2 class="pill"><span class="ic"><img src="Imagens/cozinhaicon.png" alt=""></span><span>Cozinhas</span></h2>
+      <div class="gal">
+        <img src="Imagens/sala-cozinha2.2 1.png" style="width:36.2rem" alt="Cozinha planejada com bancada clara e iluminação em LED">
+        <img src="Imagens/Cozinha1.2 1.png" style="width:36.2rem" alt="Cozinha planejada com península ripada e torre de forno">
+      </div>
+    </section>
+
+    <section class="cat c2" id="salas">
+      <h2 class="pill"><span class="ic"><img src="Imagens/salaicon.png" alt=""></span><span>Salas</span></h2>
+      <div class="gal">
+        <img src="Imagens/sala 1.png" style="width:36.1rem" alt="Painel de TV com nichos iluminados e vitrine">
+        <img src="Imagens/sala-real1 1.png" style="width:36.3rem;margin-top:-4.2rem" alt="Sala com painel de TV, rack suspenso e pendente aramado">
+      </div>
+    </section>
+
+    <section class="cat c3" id="banheiros">
+      <h2 class="pill"><span class="ic"><img src="Imagens/banheiroicon.png" alt=""></span><span>Banheiros</span></h2>
+      <div class="gal baths">
+        <img src="Imagens/Banheiro 1.png" style="width:25.7rem" alt="Banheiro com gabinete em madeira e cuba de apoio branca">
+        <img src="Imagens/banheiro1 1.png" style="width:23.7rem" alt="Banheiro com gabinete azul e espelho redondo">
+      </div>
+    </section>
+
+    <section class="quote" id="orcamento">
+      <h3>Solicite seu orçamento</h3>
+      <form id="form" novalidate>
+        <div class="row">
+          <input class="field name" id="nome" type="text" placeholder="Nome" aria-label="Nome" autocomplete="name">
+          <input class="field email" id="email" type="email" placeholder="Email" aria-label="Email" autocomplete="email">
+        </div>
+        <textarea class="field" id="msg" placeholder="Conte-nos sobre seu projeto" aria-label="Conte-nos sobre seu projeto"></textarea>
+        <button class="send" type="submit"><img src="Imagens/whatsapp.png" alt="">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <footer class="footer">© Conceito Planejados</footer>
+  </main>
+</div>
+
+<script>
+  // Troque pelo número do WhatsApp da empresa (com DDI + DDD, só dígitos)
+  var WHATSAPP = "5582999999999";
+  var base = "https://wa.me/" + WHATSAPP;
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = base + "?text=" + encodeURIComponent("Olá! Gostaria de fazer um orçamento de móveis planejados.");
+  });
+  document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var n = document.getElementById("nome").value.trim();
+    var m = document.getElementById("email").value.trim();
+    var t = document.getElementById("msg").value.trim();
+    var txt = "Olá! Meu nome é " + (n || "—") + (m ? " (" + m + ")" : "") + ".\n" + (t || "Gostaria de fazer um orçamento.");
+    window.open(base + "?text=" + encodeURIComponent(txt), "_blank", "noopener");
+  });
+  var b = document.getElementById("burger"), menu = document.getElementById("menu");
+  function toggle(open){
+    menu.classList.toggle("open", open);
+    b.setAttribute("aria-expanded", open);
+    b.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+  }
+  b.addEventListener("click", function(){ toggle(!menu.classList.contains("open")); });
+  menu.addEventListener("click", function(e){ if(e.target.tagName === "A") toggle(false); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") toggle(false); });
+</script>
+</body>
+</html>
