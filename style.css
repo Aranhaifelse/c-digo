@@ -73,13 +73,11 @@ button,input,textarea{font:inherit;color:inherit}
 .hero-text h1{
   margin-top:-.6rem;font-size:4.2rem;line-height:5.17rem;font-weight:500;letter-spacing:-.02em;
   text-shadow:0 .2rem .5rem rgba(0,0,0,.6);
-  -webkit-text-stroke:1px rgba(0, 0, 0, 0.774);
 }
-.hero-text h1 em{font-style:normal;color:var(--brown); -webkit-text-stroke:1px rgba(0, 0, 0, 0.774);}
+.hero-text h1 em{font-style:normal;color:var(--brown);}
 .hero-text p{
   margin:1rem auto 0;white-space:nowrap;font-size:1.55rem;line-height:1.9rem;
-  text-shadow:var(--shadow-text);
-  -webkit-text-stroke:0.4px black;
+  text-shadow:0 .2rem .5rem rgba(0,0,0,.6);
 }
 .hero-text p b{font-weight:500;color:var(--brown)}
 .btn-wa{
@@ -147,7 +145,7 @@ button,input,textarea{font:inherit;color:inherit}
 }
 .pill .ic{flex:none;width:6.3rem;height:100%;display:grid;place-items:center;border-right:.1rem solid #1b1b1b;padding-right:.2rem}
 .pill .ic img{width:3.9rem;height:3.9rem;border-radius:50%;border: solid 0.5px black;background:#fff}
-.pill span{flex:1;text-align:center;padding:0 1rem}
+.pill span{flex:1;text-align:center;padding:0 1rem; text-shadow:0 .2rem .5rem rgba(0,0,0,.6);}
 .gal{display:flex;flex-direction:column;align-items:center}
 .gal img{margin-top:-3.7rem}
 .gal img:first-child{margin-top:-.4rem}
