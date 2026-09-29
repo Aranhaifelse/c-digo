@@ -73,11 +73,13 @@ button,input,textarea{font:inherit;color:inherit}
 .hero-text h1{
   margin-top:-.6rem;font-size:4.2rem;line-height:5.17rem;font-weight:500;letter-spacing:-.02em;
   text-shadow:0 .2rem .5rem rgba(0,0,0,.6);
+  -webkit-text-stroke:1px rgba(0, 0, 0, 0.774);
 }
-.hero-text h1 em{font-style:normal;color:var(--brown)}
+.hero-text h1 em{font-style:normal;color:var(--brown); -webkit-text-stroke:1px rgba(0, 0, 0, 0.774);}
 .hero-text p{
   margin:1rem auto 0;white-space:nowrap;font-size:1.55rem;line-height:1.9rem;
   text-shadow:var(--shadow-text);
+  -webkit-text-stroke:0.4px black;
 }
 .hero-text p b{font-weight:500;color:var(--brown)}
 .btn-wa{
