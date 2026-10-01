@@ -13,7 +13,7 @@
 <body>
   <div class="page">
 
-    <header class="header">
+    <header class="header scrolled" >
       <a class="logo" href="#topo" aria-label="Conceito Planejados – 10 anos"><img src="Imagens/logo.png"
           alt="Conceito Planejados – 10 anos"></a>
       <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"
@@ -215,7 +215,18 @@
 
   <script>
 
+    const navbar = document.querySelector(".header");
+    const menus = document.querySelector("#menu");
+    window.addEventListener("scroll", () =>{
 
+      if (window.scrollY > 100){
+        navbar.classList.add("scrolled")
+        menus.classList.add("scrolled")
+      }else{
+        navbar.classList.remove("scrolled")
+        menus.classList.remove("scrolled")
+      }
+    })
 
     // Troque pelo número do WhatsApp da empresa (com DDI + DDD, só dígitos)
     var WHATSAPP = "558299970576";
