@@ -83,11 +83,13 @@
         <h2 class="pill"><span class="ic"><img src="Imagens/cozinhaicon.png" alt=""></span><span>Cozinhas</span></h2>
         <div class="gal">
           <ul class="list-text">
+            
             <li>Balcão</li>
             <li>Armário</li>
             <li>Torre quente</li>
+            <li>Nicho</li>
             <li>Ilha central</li>
-            <li>Nichos</li>
+            <a href="https://www.instagram.com/saconceitoplanejados/" class="decorate" target="_blank"><img src="Imagens/instagramicon.png" alt="">Saiba mais</a>
           </ul>
           <div class="area-images">
             <img src="Imagens/sala-cozinha2.2 1.png" 
@@ -103,11 +105,13 @@
         <h2 class="pill"><span class="ic"><img src="Imagens/banheiroicon.png" alt=""></span><span>Banheiros</span></h2>
         <div class="gal bath">
           <ul class="list-text">
+            
             <li>Balcão</li>
             <li>Armário</li>
             <li>Espelho</li>
             <li>Prateleira</li>
             <li>Nicho</li>
+           <a href="https://www.instagram.com/saconceitoplanejados/" class="decorate" target="_blank"><img src="Imagens/instagramicon.png" alt="">Saiba mais</a>
           </ul>
           <div class="area-images">
             <img src="Imagens/Banheiro 1.png" id="img-bath1" alt="Banheiro com gabinete em madeira e cuba de apoio branca">
@@ -127,6 +131,7 @@
             <li>Armário (entrada)</li>
             <li>Painel ripado</li>
             <li>Prateleira</li>
+            <a href="https://www.instagram.com/saconceitoplanejados/" class="decorate" target="_blank"><img src="Imagens/instagramicon.png" alt="">Saiba mais</a>
           </ul>
           <div class="area-images">
             <img src="Imagens/sala 1.png"  alt="Painel de TV com nichos iluminados e vitrine">
@@ -167,6 +172,7 @@
     document.querySelectorAll("[data-wa]").forEach(function (a) {
       a.href = base + "?text=" + encodeURIComponent("Olá! Gostaria de fazer um orçamento de móveis planejados.");
     });
+
     document.getElementById("form").addEventListener("submit", function (e) {
       e.preventDefault();
       var n = document.getElementById("nome").value.trim();
@@ -175,6 +181,7 @@
       var txt = "Olá! Meu nome é " + (n || "—") + (m ? " (" + m + ")" : "") + ".\n" + (t || "Gostaria de fazer um orçamento.");
       window.open(base + "?text=" + encodeURIComponent(txt), "_blank", "noopener");
     });
+
     var b = document.getElementById("burger"), menu = document.getElementById("menu");
     function toggle(open) {
       menu.classList.toggle("open", open);
