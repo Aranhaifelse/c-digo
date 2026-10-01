@@ -61,7 +61,7 @@ textarea {
   margin: 0 auto;
   position: relative;
   border-radius: 1rem;
-  overflow: clip;
+  
   box-shadow: 0 .8rem 3rem rgba(0, 0, 0, .35);
   background: var(--blue);
 }
@@ -246,7 +246,8 @@ textarea {
 
 /* ---------- Formulário ---------- */
 .quote {
-  width: 36.4rem;
+  width: 50.4rem;
+  height: 200px;
   margin: 9.05rem auto 0;
   padding: 2rem 1.6rem 2rem;
   background: #1E4A5F;
@@ -287,15 +288,19 @@ textarea {
 
 .field.name {
   flex: 18.1;
+  height: 30px;
   border: .1rem solid var(--brown);
   background-color: var(--brown);
+  font-size: 7px;
   box-shadow: inset 0 .2rem .7rem rgba(0, 0, 0, .6);
 }
 
 .field.email {
   flex: 14.4;
+  height: 30px;
   border: .1rem solid var(--brown);
   background-color: var(--brown);
+  font-size: 7px;
   box-shadow: inset 0 .2rem .7rem rgba(0, 0, 0, .6);
 }
 
@@ -303,6 +308,7 @@ textarea.field {
   display: block;
   border: .1rem solid var(--brown);
   background-color: var(--brown);
+  font-size: 7px;
   width: 100%;
   height: 10.5rem;
   margin-top: 2rem;
@@ -317,11 +323,11 @@ textarea.field {
   justify-content: center;
   gap: .7rem;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   margin-top: 1.5rem;
   border-radius: .8rem;
   cursor: pointer;
-  background: var(--brown);
+  background: #1E4A5F;
   border: .1rem solid var(--brown);
   font-size: 2rem;
   text-shadow: 0 .2rem .5rem rgba(0, 0, 0, .6);
@@ -339,14 +345,108 @@ textarea.field {
 }
 
 .footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.4rem;
+  margin-top: 9rem;
+  width: 100%;
+  background: var(--blue-head);
+  border-top: .2rem solid var(--brown);
+  border-radius: 1.2rem 1.2rem 0 0;
+  box-shadow: 0 -.4rem 1.2rem rgba(0, 0, 0, .35);
+  padding: 3.6rem 3.4rem 2rem;
+  color: var(--text);
+  scroll-margin-top: 9rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.footer-title {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: var(--brown);
+  text-shadow: var(--shadow-text);
+  margin-bottom: 1.6rem;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li,
+.footer-address {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.55rem;
+  line-height: 2rem;
+}
+
+.contact-list li {
+  padding: 1rem 0;
+  border-bottom: .1rem dashed rgba(168, 125, 91, .55);
+}
+
+.contact-list li:last-child {
+  border-bottom: 0;
+}
+
+.contact-list a:hover,
+.map-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.ci {
+  flex: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: none;
+  stroke: var(--brown);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  object-fit: contain;
+}
+
+.footer-address {
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+}
+
+.map {
+  border: .2rem solid var(--brown);
+  border-radius: .8rem;
+  overflow: hidden;
+  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .45);
+  background: #194457;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 26rem;
+  border: 0;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 1.45rem;
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.footer-copy {
+  margin-top: 3.2rem;
+  padding-top: 1.6rem;
+  border-top: .1rem solid rgba(255, 255, 255, .12);
   text-align: center;
-  font-size: 1.3rem;
-  color: var(--brown-dark);
-  font-weight: 600
+  font-size: 1.25rem;
+  color: var(--beige);
+  font-weight: 500;
 }
 
 @media (prefers-reduced-motion:reduce) {

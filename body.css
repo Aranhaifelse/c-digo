@@ -209,9 +209,21 @@
 .bath{
   padding-left: 10px;
 }
-
+.area-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 210px;
+  justify-content: center;
+  width: 55%;
+  background-color: #194457; 
+  border: 2px solid #A87D5B;
+  border-radius: 5px;
+  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.438);
+}
 .area-images img{
-  width:33.3rem
+  width:33.3rem;
+  
 }
 .cat {
   display: flex;
@@ -260,16 +272,15 @@
   font-weight: 400;
   line-height: 30px;
   color: #F2E9D8;
-  background-color: #194457;  
-  background-position: center top;
-  background-size: cover;
+  background-color: #194457; 
+  border: 2px solid #A87D5B;
   border-radius: 5px;
   list-style: none;
   white-space: nowrap;
   padding: 2px 20px;
-  
+  margin-right: 5px;
   box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.438);
-  border: 2px solid #A87D5B;
+  
 }
 
 .list-text li{
