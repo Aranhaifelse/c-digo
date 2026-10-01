@@ -170,7 +170,7 @@
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
-  background-color: #40606F;
+  background-color: #A87D5B;
   box-shadow:inset 0 .2rem .5rem rgba(0, 0, 0, .6);
 }
 
@@ -186,7 +186,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #40606F;
+  background-color: #A87D5B;
   width: 400px;
   height: 250px;
   border-radius: 10px;
