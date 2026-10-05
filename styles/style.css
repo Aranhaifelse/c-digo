@@ -187,7 +187,7 @@ textarea {
 .hero {
   position: relative;
   height: 106.2rem;
-  background: #194457 url(./Imagens/Moodboard\ de\ Marcenaria\ Contemporânea.png) center/100% 100% no-repeat;
+  background: #194457 url(../Imagens/Moodboard\ de\ Marcenaria\ Contemporânea.png) center/100% 100% no-repeat;
   border-radius: 0 0 1.2rem 1.2rem;
   box-shadow: 0 .4rem .8rem rgba(0, 0, 0, .45);
   z-index: 2;
