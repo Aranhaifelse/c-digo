@@ -154,14 +154,13 @@ textarea {
 .menu.scrolled {
   position: absolute;
   top: 10.9rem;
-  left: 25rem;
-  right: 0;
   z-index: 19;
   background: var(--blue-head);
   border-top: .1rem solid rgba(255, 255, 255, .12);
   border-radius: 10px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .45);
   display: none;
+  justify-self: center;
   flex-direction: column;
   padding: 1rem 3.4rem 2rem;
   width: 100px;
