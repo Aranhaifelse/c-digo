@@ -84,7 +84,7 @@ textarea {
 
 .header.scrolled {
   position: sticky;
-  top: 20px;
+  top: 5rem;
   z-index: 20;
   height: 7.9rem;
   width: 200px;
@@ -137,8 +137,11 @@ textarea {
 }
 
 .menu {
-  transform: translate(0, 60%);
-  z-index: 21;
+  position: absolute;
+  top: 7.9rem;
+  left: 0;
+  right: 0;
+  z-index: 19;
   background: var(--blue-head);
   border-top: .1rem solid rgba(255, 255, 255, .12);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .45);
@@ -150,12 +153,14 @@ textarea {
 
 .menu.scrolled {
   position: absolute;
+  top: 12.5rem;
   z-index: 19;
   background: var(--blue-head);
   border-top: .1rem solid rgba(255, 255, 255, .12);
   border-radius: 10px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .45);
   display: none;
+  justify-self: center;
   flex-direction: column;
   padding: 1rem 3.4rem 2rem;
   width: 100px;
@@ -322,7 +327,7 @@ textarea {
 }
 
 .quote h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 1.8rem;
   font-weight: 500;
   color: #fff;
