@@ -564,6 +564,7 @@ div.imagem-fundo{
 .quote h3 {
   font-size: clamp(28px, 2.8vw, 36px);
   line-height: 1.2;
+  font-weight: normal;
 }
 
 .quote .row {
